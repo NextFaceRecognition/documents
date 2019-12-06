@@ -5,10 +5,14 @@
   
 ## 人脸注册
 方法名：addFace
+
 简述：用于将一张新的人脸照片注册到后台数据库
+
 URL：http://{ip地址}:{端口号}/faceService/addFaces
+
 提交方式：POST
-输入参数：
+
+输入参数：  
 参数名称 | 类型 | 说明  
 -|-|---
 uid | String | 用户的id账号
@@ -16,7 +20,8 @@ uid_type | String | 用户id的类型，有身份证号、工号等
 name | String | 用户名字
 channel | String | 上传渠道，有微信小程序、安卓、ios等
 img | String | 图片采用Base64编码后的字符串  
-返回参数：
+返回参数：  
+
 参数名称 | 类型 | 说明  
 -|-|---
 code | Integer | 若code为0表示操作成功，否则操作失败，含义详见错误码定义
@@ -25,10 +30,14 @@ message | String | 系统返回的信息
 
 ## 人脸验证
 方法名：checkPerson
+
 简述：将上传的人脸与已注册的人脸进行比对，返回比对结果
+
 URL：http://{ip地址}:{端口号}/faceService/checkPerson
+
 提交方式：POST
-输入参数：
+
+输入参数：  
 参数名称 | 类型 | 说明  
 -|-|---
 uid | String | 用户的id账号
@@ -36,7 +45,9 @@ uid_type | String | 用户id的类型，有身份证号、工号等
 name | String | 用户名字
 channel | String | 上传渠道，有微信小程序、安卓、ios等
 img | String | 图片采用Base64编码后的字符串
-返回参数
+
+返回参数：  
+参数名称 | 类型 | 说明  
 -|-|---
 code | Integer | 若code为0表示操作成功，否则操作失败，含义详见错误码定义
 message | String | 系统返回的信息
